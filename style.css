@@ -1,13 +1,16 @@
-* {
+*{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
+
+
 
 .container {
     width: 100%;
     max-width: 1180px;
     margin: auto; /* center */
 }
+
 
 .row {
     margin-top: 50px;
@@ -19,6 +22,12 @@
     content: "";
 }
 
+.col {
+    width: 33%;
+    float: left;
+    padding: 10px;
+}
+
 .isi {
     border: 1px solid gray;
     padding: 30px;
@@ -26,16 +35,36 @@
     font-weight: bold;
     font-size: 14pt;
     cursor: pointer;
+    text-align: left;
 }
 
-.col {
-    width: 33%;
-    float: left;
-    padding: 10px;
+.gambar-pay {
+    background-image: url('digi2.jpeg');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: right;
 }
+
+.gambar-reload {
+    background-image: url('digi3.jpeg');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.gambar-addon {
+    background-image: url('digi1.jpeg');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
 
 @media screen and (max-width: 800px) {
     .container {
         max-width: 780px;
+    }
+    .col {
+        width: 100%;
     }
 }
